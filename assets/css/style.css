@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+ 
+:root{
+--narinci-reng:#FF8A56;
+--secondry-color:#666;
+}
+
+
+*{font-family:Roboto;
+    margin:0;
+    text-decoration: none;
+}
+
+.header .nav-links a{
+color:black
+}
+ 
+.header{
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding:20px 10px;
+}
+ 
+
+
+/* TODO MOBILE FIRST APPROACH*/
+ header .nav-links{
+    display:none
+ }
+
+ .fa-bars{
+    cursor: pointer;}
+
+    .introduction{
+    padding:10px ;
+
+}
+        
+        .introduction .left-side h1{
+        font-size:38px;
+        }
+
+
+        .introduction .left-side h1 span{
+        color:var(--narinci-reng);
+        }
+
+       .introduction .left-side p{
+       color:var(--secondry-color);
+        margin-bottom: 20px;}
+
+         .introduction .left-side button{
+            background:black ;
+            color:#fff;
+            width:151px;
+            height: 58px;
+            margin-right:30px;
+            }
+        .introduction .right-side{
+        width:300px;
+        background-color: red;
+        margin-top: 20px;
+    }
+
+
+.introduction .right-side img{
+width:100%;
+}
+
+
+    @media(min-width:767px){
+    header .nav-links{
+    display:flex;
+    width:400px ;
+    justify-content: space-between;
+}
+
+header .fa-bars{
+display:none;}
+
+.header{
+padding-left: 60px;
+padding-right:60px ;
+padding:40px 60px;}
+
+.introduction  .left-side h1{
+    font-size: 72px; 
+}
+.introduction{
+padding: 40px 60px;}
+
+.introduction .right-side{
+background:red;
+display: block;
+width: 500px;
+margin: 40px auto;
+}
+}
+
+@media(min-width:1279px){
+    .introduction{
+    
+    display: flex;
+    justify-content: center;}
+    
+    .introduction .right-side{
+    width:600px ;
+    height: 595px;
+     margin-left: 20px;
+      }
+          }
+    
+
+
+    
+
+ 
+ 
+
+
+
+
+
